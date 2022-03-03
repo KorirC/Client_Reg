@@ -16,14 +16,15 @@
        footer{
             text-align:center
         }
+        body{
+            background-color: whitesmoke;
+        }
     </style>
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="light-skin fixed-navbar sidebar-scroll">
     <div class="wrapper">
-        <!-- Main Header -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
+        <nav class="main-header navbar navbar-expand navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -36,7 +37,6 @@
                         <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <!-- User image -->
                         <li class="user-header bg-primary">
 
                             <p>
@@ -44,7 +44,6 @@
                                 <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
                             </p>
                         </li>
-                        <!-- Menu Footer-->
                         <li class="user-footer">
                             <a href="#" class="btn btn-default btn-flat">Profile</a>
                             <a href="#" class="btn btn-default btn-flat float-right" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -57,10 +56,7 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
-
-        <!-- Left side column. contains the logo and sidebar -->
-        @include('layouts.sidebar')
+        </nav> 
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -72,7 +68,7 @@
         <!-- Main Footer -->
         <footer class="main-footer">
 
-            <strong>Copyright &copy; 2022 <a href="#">ClientRegistry</a>.</strong> All rights
+            <strong>Copyright &copy; 2022 <a href="#">HealthIT</a>.</strong> All rights
             reserved.
         </footer>
     </div>
